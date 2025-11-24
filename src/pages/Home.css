@@ -1,0 +1,77 @@
+.home-container {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.home-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.home-header h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.home-header p {
+  font-size: 1.2rem;
+}
+
+.upload-section, .rewards, .assign, .how-it-works {
+  background: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.upload-section input {
+  margin-top: 10px;
+}
+
+.btn {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #2e7d32;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #1b5e20;
+}
+
+.success {
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.coin-box {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+  width: fit-content;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.collector-box {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #e8f5e9;
+  border-radius: 8px;
+  border: 1px solid #2e7d32;
+}
+
+.how-it-works ul {
+  padding-left: 20px;
+}
+
+.how-it-works li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,14 @@
+.collector-container {
+  padding: 20px;
+}
+.collector-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.collector-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
