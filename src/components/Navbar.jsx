@@ -1,12 +1,26 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
+import "./Navbar.css";
 
 export default function Navbar() {
+  const location = useLocation();
+
   return (
-    <nav style={{ padding: "10px", background: "#1e90ff", color: "white" }}>
-      <Link to="/" style={{ marginRight: "20px", color: "white" }}>Home</Link>
-      <Link to="/dashboard" style={{ marginRight: "20px", color: "white" }}>Dashboard</Link>
-      <Link to="/collector" style={{ color: "white" }}>Collector</Link>
+    <nav className="navbar">
+      <div className="navbar-logo">
+        <Link to="/">♻️ E-Waste Portal</Link>
+      </div>
+      <ul className="navbar-links">
+        <li className={location.pathname === "/" ? "active" : ""}>
+          <Link to="/">Home</Link>
+        </li>
+        <li className={location.pathname === "/dashboard" ? "active" : ""}>
+          <Link to="/dashboard">Collector</Link>
+        </li>
+        <li className={location.pathname === "/faqs" ? "active" : ""}>
+          <Link to="/faqs">FAQs</Link>
+        </li>
+      </ul>
     </nav>
   );
 }
